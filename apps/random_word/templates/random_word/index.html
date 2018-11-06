@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    {% load static %}
+    <!-- The line above tells Django to be ready to listen for static files -->
+    <link rel="stylesheet" href="{% static 'ourApp/css/main.css' %}">
+  </head>
+  <body>
+    <h1>random wordl(attempt number {{count}})</h1>
+    <p>{{word}}</p>
+    <form action='/create' method='get'>
+      <input type='submit' value='generate word'>
+    </form>
+  </body>
+</html>
